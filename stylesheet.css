@@ -1,3 +1,4 @@
+
 /* General Reset */
 * {
     margin: 0;
@@ -23,6 +24,7 @@ body {
 /* Profile Styles */
 #profile {
     display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
     background-color: rgba(0, 0, 0, 0.1); /* Light black transparent background */
     border-radius: 15px; /* Curved background */
     padding: 20px;
@@ -80,6 +82,22 @@ body {
     margin-right: 10px; /* Space between icons */
 }
 
-#info-cards {
-    margin-top: 20px; /* Space above info cards */
+/* Responsive Design */
+@media (max-width: 600px) {
+    #profile {
+        flex-direction: column; /* Stack image and text vertically on small screens */
+        align-items: center; /* Center items in the profile section */
+        text-align: center; /* Center text for better readability */
+    }
+    
+    #image {
+        margin-right: 0; /* Remove right margin on small screens */
+        margin-bottom: 20px; /* Add space below image */
+    }
+    
+    #profile-photo {
+        width: 100px; /* Smaller photo size on mobile devices */
+        height: auto;
+        border-radius: 50%; /* Keep circular shape */
+    }
 }
