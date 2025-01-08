@@ -1,37 +1,195 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Mihir Kulkarni</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background: #121212;
+      color: #e5e5e5;
+    }
+    
+    details {
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      background: rgba(255, 255, 255, 0.05);
+    }
+    
+    summary {
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      transition: background 0.2s;
+    }
+    
+    summary:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    
+    .resource {
+      padding: 0.5rem 1rem;
+      margin: 0.25rem 0;
+    }
+    
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    .button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      margin: 1rem 0;
+      background: #60a5fa;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 0.25rem;
+      transition: background 0.2s;
+    }
+    
+    .button:hover {
+      background: #3b82f6;
+    }
+
+    form label {
+      display: block; 
+      margin-bottom: 0.5rem; 
+    }
+
+    form input[type="email"],
+    form textarea {
+      width: 100%; 
+      padding: 0.5rem; 
+      margin-top: 0.25rem; 
+    }
+
+    button[type="submit"] {
+      padding: 0.5rem 1rem; 
+      background: #60a5fa; 
+      color: #fff; 
+      border: none; 
+      border-radius: 0.25rem; 
+      cursor: pointer; 
+      transition: background 0.2s; 
+    }
+
+    @media (max-width: 600px) {
+      body {
+        max-width: 100%;
+        margin: 1rem;
+        padding: 0.5rem;
+      }
+      
+      .resource {
+        padding: 0.5rem;
+      }
+      
+      .button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.75rem;
+      color: #888;
+      font-family: 'Courier New', Courier, monospace;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
-    <div id="inner-nav"></div>
-    <div id="container">
-        <div id="profile">
-            <div id="image">
-                <img id="profile-photo" src="mikupassporttobemade.jpg" alt="Profile-Image">
-            </div>
-            <div id="profile-info">
-                <p id="name">MIHIR KULKARNI<br><span id="email">mihirkulaa@gmail.com</span></p>
-                <p id="designation">AI Engineer<br><span id="college">Shivaji University, Kolhapur</span></p>
-                <div id="social-links">
-                    <a href="https://x.com/MIHIRKULAA" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/MIHIRKULAA" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/mihirkulaa" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/mihirkulaa" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-                <hr width="100%">
-                <div id="about">
-                    <p style="display:inline;">About</p>
-                </div>
-                <p id="year-graduation">Expected Year of Graduation<br><strong>March, 2027</strong></p>
-                <p id="education">Education<br><strong>B.Tech Computer Science and Engg.</strong></p>
-                <button id="download-resume">Download Resume</button>
-            </div>
-        </div>
+  <h1>Mihir Kulkarni</h1>
+  
+  <details>
+    <summary aria-expanded="false">About</summary>
+    <div class="resource"></div>
+      <p>Hi, I'm Mihir Kulkarni, a passionate software developer with a focus on machine learning and web development. I love creating innovative solutions and sharing my knowledge with the community.</p>
+      <img src="profile.png" alt="Mihir Kulkarni" style="max-width: 100%; height: auto; border-radius: 0.5rem; margin-top: 1rem;">
     </div>
+  </details>
+  <details>
+    <summary aria-expanded="false">Projects</summary>
+    <div class="resource">
+      <p>Here are some of my recent projects:</p>
+      <ul>
+        <li>Project 1: Description of project 1.</li>
+        <li>Project 2: Description of project 2.</li>
+        <li>Project 3: Description of project 3.</li>
+      </ul>
+    </div>
+  </details>
+  
+  <details>
+    <summary aria-expanded="false">Socials</summary>
+    <div class="resource">
+      <p>Connect with me on social media:</p>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/mihirkula" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://twitter.com/mihirkulaa" target="_blank" rel="noopener noreferrer">X.com</a></li>
+        <li><a href="https://github.com/mihirkulaa" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://mihirkulaa.substack.com" target="_blank" rel="noopener noreferrer">Substack</a></li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary aria-expanded="false">Contact</summary>
+    <div class="resource">
+      <form action="https://formspree.io/f/xeoopnbe" method="POST">
+        <label>Your email:
+          <input type="email" name="email" required placeholder="Enter your email">
+        </label>
+        <label>Your message:
+          <textarea name="message" required placeholder="Type your message here"></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </details>
+
+  <details>
+    <summary aria-expanded="false">Blog</summary>
+    <div class="resource">
+     <p><a href="https://mihirkulaa.substack.com" target="_blank" rel="noopener noreferrer">Subscribe to my blog</a></p>
+     <div id="custom-substack-embed"></div>
+     <script>
+     window.CustomSubstackWidget = {
+       substackUrl: "mihirkulaa.substack.com",
+       placeholder: "example@gmail.com",
+       buttonText: "Subscribe",
+       theme: "custom",
+       colors: {
+       primary: "#000000",
+       input: "#FFFFFF",
+       email: "#000000",
+       text: "#FFFFFF",
+       },
+     };
+     </script>
+     <script src="https://substackapi.com/widget.js" async></script>
+     </div>
+    </details>
+
+  <div class="resource">
+     <a href="resume.pdf" class="button" download>Download Resume</a>
+   </div>
+
+   <footer>
+     &copy; 2025 𑘦𑘲𑘮𑘲𑘨𑘿 𑘎𑘳𑘩𑘿𑘎𑘨𑘿𑘡𑘲
+   </footer>
+
 </body>
+
 </html>
